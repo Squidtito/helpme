@@ -18,7 +18,7 @@ def get_machine_info():
         'processor': platform.processor(),
         'ram': f"{psutil.virtual_memory().total / (1024 * 1024)} MB",
         'cpu_count': psutil.cpu_count(),
-        'cpu_freq': f"{psutil.cpu_freq().max} MHz",
+        'cpu_freq': f"{psutil.cpu_freq()} MHz",
         'disk_usage': psutil.disk_usage('/').percent,  # Adjust path as needed
     }
 
