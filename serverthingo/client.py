@@ -5,7 +5,7 @@ import psutil
 import subprocess
 import sys
 
-HOST = sys.argv[1]  # The server's hostname or IP address
+HOST = "v-pin.gl.at.ply.gg"  # The server's hostname or IP address
 PORT = 39099        # The port used by the server
 
 def get_machine_info():
